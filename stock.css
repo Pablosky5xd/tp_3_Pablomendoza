@@ -1,0 +1,138 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a90e2;
+    animation: fadeIn 2s ease-in-out;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.animated-text:hover {
+    color: #ff6b6b;
+    transform: rotate(-3deg);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Imagen en movimiento */
+.moving-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.moving-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+/* Galería de autos */
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.car-card {
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.car-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.car-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Botones de navegación */
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #4a90e2;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.styled-button:hover {
+    background-color: #357abd;
+}
+
+.styled-button:active {
+    background-color: #2e5d8a;
+    transform: scale(0.95);
+}
+
+/* Pie de página */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
