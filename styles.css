@@ -26,7 +26,7 @@ header {
 .animated-text {
     font-size: 2rem;
     font-weight: bold;
-    color: #4a90e2;
+    color: red;
     animation: fadeIn 2s ease-in-out;
     transition: color 0.3s, transform 0.3s;
 }
@@ -70,7 +70,7 @@ header {
 /* Sección de descripción */
 .description {
     margin: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 /* Botones de navegación */
@@ -85,8 +85,8 @@ header {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: white   ;
-    background-color: #4a90e2;
+    color: black   ;
+    background-color: blueviolet;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.4s ease, ;
     position: relative;

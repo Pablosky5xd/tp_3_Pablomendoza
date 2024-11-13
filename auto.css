@@ -26,7 +26,7 @@ header {
 .animated-text {
     font-size: 2rem;
     font-weight: bold;
-    color: #4a90e2;
+    color: red;
     animation: fadeIn 2s ease-in-out;
     transition: color 0.3s, transform 0.3s;
 }
@@ -82,7 +82,7 @@ header {
 }
 
 .car-table thead {
-    background-color: #4a90e2;
+    background-color: gray;
     color: white;
 }
 
@@ -113,14 +113,14 @@ header {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    background-color: #4a90e2;
+    background-color: red;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     position: relative;
 }
 
 .styled-button:hover {
-    background-color: red;
+    background-color: wheat;
 }
 
 .styled-button:active {
